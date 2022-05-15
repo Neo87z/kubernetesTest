@@ -1,5 +1,5 @@
 {
-  "name": "kubernetesTest",
+  "name": "sliit-y4-demo-2022",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Neo87z/kubernetesTest.git"
+    "url": "git+https://github.com/nilesh93/sliit-y4-demo-2022.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Neo87z/kubernetesTest/issues"
+    "url": "https://github.com/nilesh93/sliit-y4-demo-2022/issues"
   },
-  "homepage": "https://github.com/Neo87z/kubernetesTest#readme",
+  "homepage": "https://github.com/nilesh93/sliit-y4-demo-2022#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "sed": "0.0.2"
+    "express": "^4.18.1"
   }
 }

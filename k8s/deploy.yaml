@@ -25,15 +25,14 @@ spec:
         app: test-sliit
     spec:
       containers:
-      - image: neo87z/sliit-2020-test:word2
-        imagePullPolicy: Always
-        name: sliit-2020-test
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
-        ports:
-        - containerPort: 3000
-
+        - image: neo87z/sliit-2022-test:{{tag}}
+          imagePullPolicy: Always
+          name: sliit-2022-test
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          ports:
+            - containerPort: 3000
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
