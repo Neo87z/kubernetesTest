@@ -27,7 +27,7 @@ jobs:
         push: true
         tags: ${{secrets.DOCKER_USERNAME}}/sliit-2020-test:${{ github.sha}}
     - names:  Update Config files in k8s
-      run:  sed -i.bak 's/{{tag}}/word2/g' k8s/deploy.yaml && rm k8s/*.bak
+      run:  sed -i.bak 's/{{tag}}/{{ github.sha}}/g' k8s/deploy.yaml && rm k8s/*.bak
     - uses: actions-hub/kubectl@master
       env:
         KUBE_CONFIG:  ${{secrets.KUBE_CONFIG}}
