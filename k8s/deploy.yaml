@@ -25,7 +25,7 @@ spec:
         app: test-sliit
     spec:
       containers:
-      - image: neo87z/sliit-2020-test:{{tag}}
+      - image: neo87z/sliit-2020-test:word2
         imagePullPolicy: Always
         name: sliit-2020-test
         resources: {}
